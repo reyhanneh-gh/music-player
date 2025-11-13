@@ -20,6 +20,7 @@
   "homepage": "https://github.com/reyhanneh-gh/music-player#readme",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.17",
+    "bootstrap-icons": "^1.13.1",
     "tailwindcss": "^4.1.17"
   }
 }

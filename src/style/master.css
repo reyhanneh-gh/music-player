@@ -1,2 +1,14 @@
 @import "tailwindcss";
+
 /* npx @tailwindcss/cli -i ./src/style/master.css -o ./src/style/output.css --watch */
+.myBg {
+    background-image: url('../assets/img/background.png');
+}
+
+.Bg1 {
+    background-color: rgba(101, 101, 101, 0.199);
+}
+
+.fontfamily {
+    font-family: "Rubik Wet Paint", system-ui;
+}
