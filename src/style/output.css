@@ -218,6 +218,9 @@
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
+  .w-1\/2 {
+    width: calc(1/2 * 100%);
+  }
   .w-1\/6 {
     width: calc(1/6 * 100%);
   }
