@@ -405,6 +405,16 @@
       border-color: var(--color-white);
     }
   }
+  .\*\:p-1 {
+    :is(& > *) {
+      padding: calc(var(--spacing) * 1);
+    }
+  }
+  .\*\:p-1\.5 {
+    :is(& > *) {
+      padding: calc(var(--spacing) * 1.5);
+    }
+  }
   .\*\:p-2\.5 {
     :is(& > *) {
       padding: calc(var(--spacing) * 2.5);
