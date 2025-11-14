@@ -11,6 +11,7 @@
     --color-red-300: oklch(80.8% 0.114 19.571);
     --color-red-800: oklch(44.4% 0.177 26.899);
     --color-red-900: oklch(39.6% 0.141 25.723);
+    --color-red-950: oklch(25.8% 0.092 26.042);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
@@ -318,8 +319,14 @@
   .border-t-red-900 {
     border-top-color: var(--color-red-900);
   }
+  .border-t-red-950 {
+    border-top-color: var(--color-red-950);
+  }
   .border-b-red-900 {
     border-bottom-color: var(--color-red-900);
+  }
+  .border-b-red-950 {
+    border-bottom-color: var(--color-red-950);
   }
   .bg-\[\#901e1e97\] {
     background-color: #901e1e97;
