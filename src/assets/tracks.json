@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "title": "Your Woman",
+    "artist": "White Town",
+    "duration": "4:20",
+    "release_year": 1997,
+    "album": "Women in Technology",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 2,
+    "title": "Creep",
+    "artist": "Radiohead",
+    "duration": "3:56",
+    "release_year": 1992,
+    "album": "Pablo Honey",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 3,
+    "title": "Videotape",
+    "artist": "Radiohead",
+    "duration": "4:39",
+    "release_year": 2007,
+    "album": "In Rainbows",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 4,
+    "title": "Hysteria",
+    "artist": "Muse",
+    "duration": "3:47",
+    "release_year": 2003,
+    "album": "Absolution",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 5,
+    "title": "The Emptiness Machine",
+    "artist": "Linkin Park",
+    "duration": "3:10",
+    "release_year": 2024,
+    "album": "From Zero",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 6,
+    "title": "Faint",
+    "artist": "Linkin Park",
+    "duration": "2:42",
+    "release_year": 2003,
+    "album": "Meteora",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 7,
+    "title": "Somewhere I Belong",
+    "artist": "Linkin Park",
+    "duration": "3:33",
+    "release_year": 2003,
+    "album": "Meteora",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 8,
+    "title": "Heavy Is the Crown",
+    "artist": "Linkin Park",
+    "duration": "2:47",
+    "release_year": 2024,
+    "album": "From Zero",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 9,
+    "title": "Two Faced",
+    "artist": "Linkin Park",
+    "duration": "3:03",
+    "release_year": 2024,
+    "album": "From Zero",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 10,
+    "title": "What I've Done",
+    "artist": "Linkin Park",
+    "duration": "3:25",
+    "release_year": 2007,
+    "album": "Minutes to Midnight",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 11,
+    "title": "ANYTHING > HUMAN (feat. ERRA)",
+    "artist": "Bad Omens (feat. ERRA)",
+    "duration": "3:55",
+    "release_year": 2024,
+    "album": "Concrete Jungle [The OST]",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 12,
+    "title": "Never Know",
+    "artist": "Bad Omens",
+    "duration": "3:33",
+    "release_year": 2021,
+    "album": "Finding God Before God Finds Me (Deluxe)",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 13,
+    "title": "Mercy",
+    "artist": "Bad Omens",
+    "duration": "5:17",
+    "release_year": 2019,
+    "album": "Finding God Before God Finds Me",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 14,
+    "title": "Crawl",
+    "artist": "Bad Omens",
+    "duration": "4:07",
+    "release_year": 2016,
+    "album": "Bad Omens",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 15,
+    "title": "Gasoline",
+    "artist": "Alone In My Room",
+    "duration": "3:15",
+    "release_year": 2024,
+    "album": "",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 16,
+    "title": "THE DEATH OF PEACE OF MIND",
+    "artist": "Bad Omens",
+    "duration": "4:01",
+    "release_year": 2021,
+    "album": "The Death of Peace of Mind",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 17,
+    "title": "Softcore",
+    "artist": "The Neighbourhood",
+    "duration": "3:28",
+    "release_year": 2018,
+    "album": "Hard to Imagine the Neighbourhood Ever Changing",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 18,
+    "title": "God Is A Weapon",
+    "artist": "Falling In Reverse (feat. Marilyn Manson)",
+    "duration": "3:35",
+    "release_year": 2025,
+    "album": "Single",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 19,
+    "title": "V.A.N",
+    "artist": "Bad Omens x Poppy",
+    "duration": "4:34",
+    "release_year": 2024,
+    "album": "Concrete Jungle [The OST]",
+    "image": "",
+    "track_link": ""
+  },
+  {
+    "id": 20,
+    "title": "116747934",
+    "artist": "Unknown",
+    "duration": null,
+    "release_year": null,
+    "album": "",
+    "image": "",
+    "track_link": ""
+  }
+]
