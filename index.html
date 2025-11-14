@@ -12,7 +12,7 @@
 </head>
 
 <body class="w-full h-dvh flex justify-center items-center myBg bg-gray-900 p-2.5 md:p-5 gap-5 relative">
-    <!-- ------------------------large screen menu-------------------------- -->
+    <!-- ------------------------moblile menu-------------------------- -->
     <nav
         class="w-10/12 h-fit rounded-full flex items-center justify-center bg-gray-900 border-t border-t-red-900 md:hidden absolute bottom-10 left-[50%] translate-x-[-50%]">
         <!-- <logo class="w-full h-fit text-center text-red-300 fontfamily mt-10 md:text-2xl lg:text-4xl cursor-pointer">RollDot.</logo> -->
@@ -27,17 +27,26 @@
     </nav>
     <!-- ------------------------large screen menu-------------------------- -->
     <nav
-        class="hidden md:w-1/5 lg:w-1/6 h-full rounded-[15px] md:flex flex-wrap justify-center bg-gray-900 border-t border-t-red-900">
-        <logo class="w-full h-fit text-center text-red-800 fontfamily mt-10 md:text-2xl lg:text-4xl cursor-pointer">
+        class="lgScreen hidden md:w-1/5 lg:w-1/6 h-full rounded-[15px] md:flex flex-wrap justify-center bg-gray-900 border-t border-t-red-900">
+        <logo class="w-full h-fit text-center text-red-300 fontfamily mt-10 md:text-2xl lg:text-4xl cursor-pointer">
             RollDot.</logo>
         <ul
             class="w-full h-fit flex-col justify-center items-center p-2.5 *:w-full *:h-fit *:py-2.5 *:text-red-200 *:cursor-pointer *:hover:bg-[#60212168] *:duration-300 *:p-2.5">
             <li class="border-b border-b-red-950 flex items-center gap-x-3"><i class="bi bi-house"></i>Home</li>
-            <li class="border-b border-b-red-950 flex items-center gap-x-3"><i
-                    class="bi bi-ui-radios-grid"></i>Categories</li>
+            <li class="accMenu border-b border-b-red-950 flex items-center gap-x-3 relative">
+                <i class="bi bi-ui-radios-grid"></i>Categories
+                <i class="bi bi-chevron-down text-red-200 absolute right-2.5 top-[50%] translate-y-[-50%]"></i>
+            </li>
+
             <li class="border-b border-b-red-950 flex items-center gap-x-3"><i class="bi bi-person-check"></i>Artists
             </li>
-            <li class="flex items-center gap-x-3"><i class="bi bi-music-note-list"></i>Playlists</li>
+            <li class="accMenu flex items-center gap-x-3 relative"><i class="bi bi-music-note-list"></i>Playlists
+                <i class="bi bi-chevron-down text-red-200 absolute right-2.5 top-[50%] translate-y-[-50%]"></i>
+                <ul class="w-full h-fit absolute top-[70%] left-0 *:hover:bg-[#60212168] *:duration-300 *:pb-1.5">
+                    <li class="w-full h-fit flex items-center gap-3"> <i class="bi bi-folder2"></i>استاد پسند</li>
+                    <li class="w-full h-fit flex items-center gap-3"> <i class="bi bi-folder2"></i>Others</li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <!-- ------------------------main-------------------------- -->
@@ -55,5 +64,46 @@
         </section>
     </div>
 </body>
+<script>
+    // -------------------------accordion menu---------------------------
+    let li = document.querySelectorAll('.lgScreen>ul>li')
+    let acc = document.querySelectorAll(".accMenu>ul")
+    acc.forEach(ac => {
+        let h = ac.clientHeight
+        if (h !== 0) {
+            ac.style.height = '0px'
+            ac.style.paddingInline = '20px'
+            ac.style.overflow = 'hidden'
+        }
+        li.forEach((val, i) => {
+            let flag = 0
+            val.addEventListener('click', () => {
+
+                if (i == 3) {
+
+                    if (!(flag % 2)) {
+                        ac.style.height = h
+                        ac.style.paddingBlock = '20px'
+                        ac.style.overflow = 'visible'
+                        ac.style.transition = '.5s'
+
+                    } else {
+                        ac.style.height = '0px'
+                        ac.style.paddingBlock = '0px'
+                        ac.style.overflow = 'hidden'
+                        ac.style.transition = '.5s'
+
+                    } flag++
+                }
+            })
+        })
+    })
+    // --------------------------------------------------------------
+
+
+
+
+
+</script>
 
 </html>
