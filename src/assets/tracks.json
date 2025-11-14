@@ -6,8 +6,8 @@
     "duration": "4:20",
     "release_year": 1997,
     "album": "Women in Technology",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/your-woman.jpg",
+    "track_link": "src/assets/Music/04 White Town - Your Woman.mp3"
   },
   {
     "id": 2,
@@ -16,8 +16,8 @@
     "duration": "3:56",
     "release_year": 1992,
     "album": "Pablo Honey",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/creep.png",
+    "track_link": "src/assets/Music/Creep.mp3"
   },
   {
     "id": 3,
@@ -26,8 +26,8 @@
     "duration": "4:39",
     "release_year": 2007,
     "album": "In Rainbows",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/video-tape.jpg",
+    "track_link": "src/assets/Music/10 Radiohead - Videotape.mp3"
   },
   {
     "id": 4,
@@ -36,8 +36,8 @@
     "duration": "3:47",
     "release_year": 2003,
     "album": "Absolution",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/hysteria.jpg",
+    "track_link": "src/assets/Music/08 - Hysteria.mp3"
   },
   {
     "id": 5,
@@ -46,8 +46,8 @@
     "duration": "3:10",
     "release_year": 2024,
     "album": "From Zero",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/2face-emptiness-heavy.jpg",
+    "track_link": "src/assets/Music/Linkin Park - The Emptiness Machine.mp3"
   },
   {
     "id": 6,
@@ -56,8 +56,8 @@
     "duration": "2:42",
     "release_year": 2003,
     "album": "Meteora",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/faint.jpg",
+    "track_link": "src/assets/Music/linkin park_faint.mp3"
   },
   {
     "id": 7,
@@ -66,8 +66,8 @@
     "duration": "3:33",
     "release_year": 2003,
     "album": "Meteora",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/somewhere-i-belong.jpg",
+    "track_link": "src/assets/Music/03 - Somewhere I Belong.mp3"
   },
   {
     "id": 8,
@@ -76,8 +76,8 @@
     "duration": "2:47",
     "release_year": 2024,
     "album": "From Zero",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/2face-emptiness-heavy.jpg",
+    "track_link": "src/assets/Music/Linkin Park Heavy Is the Crown.mp3"
   },
   {
     "id": 9,
@@ -86,8 +86,8 @@
     "duration": "3:03",
     "release_year": 2024,
     "album": "From Zero",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/2face-emptiness-heavy.jpg",
+    "track_link": "src/assets/Music/Linkin Park Two Faced.mp3"
   },
   {
     "id": 10,
@@ -96,8 +96,8 @@
     "duration": "3:25",
     "release_year": 2007,
     "album": "Minutes to Midnight",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/WhatI'veDoneCover.jpg",
+    "track_link": "src/assets/Music/13543_Linkin-Park-What-Ive-Done-Official-Video.mp3"
   },
   {
     "id": 11,
@@ -106,8 +106,8 @@
     "duration": "3:55",
     "release_year": 2024,
     "album": "Concrete Jungle [The OST]",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/anything-more-than-human.jpg",
+    "track_link": "src/assets/Music/08. ANYTHING _ HUMAN (feat. ERRA).mp3"
   },
   {
     "id": 12,
@@ -116,8 +116,8 @@
     "duration": "3:33",
     "release_year": 2021,
     "album": "Finding God Before God Finds Me (Deluxe)",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/never-know.jpg",
+    "track_link": "src/assets/Music/11. Never Know.mp3"
   },
   {
     "id": 13,
@@ -126,8 +126,8 @@
     "duration": "5:17",
     "release_year": 2019,
     "album": "Finding God Before God Finds Me",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/mercy.jpg",
+    "track_link": "src/assets/Music/muzmo_ru_Bad_Omens_-_Mercy_65834446.mp3"
   },
   {
     "id": 14,
@@ -136,8 +136,8 @@
     "duration": "4:07",
     "release_year": 2016,
     "album": "Bad Omens",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/crawl.jpg",
+    "track_link": "src/assets/Music/Bad Omens - Crawl.mp3"
   },
   {
     "id": 15,
@@ -146,8 +146,8 @@
     "duration": "3:15",
     "release_year": 2024,
     "album": "",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/gasoline",
+    "track_link": "src/assets/Music/Alone in My Room - Gasoline.mp3"
   },
   {
     "id": 16,
@@ -156,8 +156,8 @@
     "duration": "4:01",
     "release_year": 2021,
     "album": "The Death of Peace of Mind",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/DOPOM.jpg",
+    "track_link": "src/assets/Music/BAD_OMENS_THE_DEATH_OF_PEACE_OF_MIND_Official_Music_Vid_ouW_RCAI0sg.mp3"
   },
   {
     "id": 17,
@@ -166,8 +166,8 @@
     "duration": "3:28",
     "release_year": 2018,
     "album": "Hard to Imagine the Neighbourhood Ever Changing",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/softcore.webp",
+    "track_link": "src/assets/Music/the neighborhood-softcore.mp3"
   },
   {
     "id": 18,
@@ -176,8 +176,8 @@
     "duration": "3:35",
     "release_year": 2025,
     "album": "Single",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/FIR.jpg",
+    "track_link": "src/assets/Music/God Is A Weapon   Falling In Reverse, Marilyn Manson.mp3"
   },
   {
     "id": 19,
@@ -186,17 +186,17 @@
     "duration": "4:34",
     "release_year": 2024,
     "album": "Concrete Jungle [The OST]",
-    "image": "",
-    "track_link": ""
+    "image": "src/assets/img/covers/V.A.N.webp",
+    "track_link": "src/assets/Music/BAD_OMENS_x_POPPY_V_A_N_Official_Music_V_MP3_6582720_uVidBot.mp3"
   },
   {
     "id": 20,
-    "title": "116747934",
-    "artist": "Unknown",
-    "duration": null,
-    "release_year": null,
-    "album": "",
-    "image": "",
-    "track_link": ""
+    "title": "What It Cost",
+    "artist": "Bad Omens",
+    "duration": "5:10",
+    "release_year": "2022",
+    "album": "The Death of Peace of Mind",
+    "image": "src/assets/img/covers/cost.webp",
+    "track_link": "src/assets/Music/116747934.mp3"
   }
 ]
