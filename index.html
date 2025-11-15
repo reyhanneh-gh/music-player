@@ -33,18 +33,34 @@
         <ul
             class="w-full h-fit flex-col justify-center items-center p-2.5 *:w-full *:h-fit *:py-2.5 *:text-red-200 *:cursor-pointer *:hover:bg-[#60212168] *:duration-300 *:p-2.5">
             <li class="border-b border-b-red-950 flex items-center gap-x-3"><i class="bi bi-house"></i>Home</li>
-            <li class="accMenu border-b border-b-red-950 flex items-center gap-x-3 relative">
+            <li class="accMenu border-b border-b-red-950 flex flex-wrap items-center gap-x-3 relative">
                 <i class="bi bi-ui-radios-grid"></i>Categories
                 <i class="bi bi-chevron-down text-red-200 absolute right-2.5 top-[50%] translate-y-[-50%]"></i>
+                <ul
+                    class="w-full h-fit *:hover:bg-[#60212168] *:duration-300 flex flex-wrap justify-center items-center mt-1.5">
+                    <li class="w-full h-fit flex items-center gap-3 py-1 text-[rgba(255,201,201,0.44)]">
+                        <i>-</i>Metalcore
+                    </li>
+                    <li class="w-full h-fit flex items-center gap-3 py-1 text-[rgb(255,201,201,0.44)]">
+                        <i>-</i>Alternative Rock
+                    </li>
+                    <li class="w-full h-fit flex items-center gap-3 py-1 text-[rgb(255,201,201,0.44)]">
+                        <i>-</i>Alternative
+                    </li>
+                </ul>
             </li>
 
             <li class="border-b border-b-red-950 flex items-center gap-x-3"><i class="bi bi-person-check"></i>Artists
             </li>
-            <li class="accMenu flex items-center gap-x-3 relative"><i class="bi bi-music-note-list"></i>Playlists
+            <li class="accMenu flex flex-wrap items-center gap-x-3 relative"><i
+                    class="bi bi-music-note-list"></i>Playlists
                 <i class="bi bi-chevron-down text-red-200 absolute right-2.5 top-[50%] translate-y-[-50%]"></i>
-                <ul class="w-full h-fit absolute top-[70%] left-0 *:hover:bg-[#60212168] *:duration-300 *:pb-1.5">
-                    <li class="w-full h-fit flex items-center gap-3"> <i class="bi bi-folder2"></i>استاد پسند</li>
-                    <li class="w-full h-fit flex items-center gap-3"> <i class="bi bi-folder2"></i>Others</li>
+                <ul
+                    class="w-full h-fit *:hover:bg-[#60212168] *:duration-300 flex flex-wrap justify-center items-center mt-1.5">
+                    <li class="w-full h-fit flex items-center gap-x-3 py-1 text-[rgb(255,201,201,0.44)]"> <i
+                            class="bi bi-folder2"></i>استاد پسند</li>
+                    <li class="w-full h-fit flex items-center gap-x-3 py-1 text-[rgb(255,201,201,0.44)]"> <i
+                            class="bi bi-folder2"></i>Others</li>
                 </ul>
             </li>
         </ul>
@@ -67,37 +83,36 @@
 <script>
     // -------------------------accordion menu---------------------------
     let li = document.querySelectorAll('.lgScreen>ul>li')
-    let acc = document.querySelectorAll(".accMenu>ul")
-    acc.forEach(ac => {
-        let h = ac.clientHeight
-        if (h !== 0) {
-            ac.style.height = '0px'
-            ac.style.paddingInline = '20px'
-            ac.style.overflow = 'hidden'
-        }
-        li.forEach((val, i) => {
-            let flag = 0
-            val.addEventListener('click', () => {
+    let acc = document.querySelectorAll(".accMenu")
+    acc.forEach((val, index) => {
+        let accSub = val.querySelector('ul')
+        let h = accSub.clientHeight
 
-                if (i == 3) {
+        accSub.style.height = '0px'
+        accSub.style.paddingInline = '20px'
+        accSub.style.overflow = 'hidden'
+        accSub.setAttribute('data-status', 0)
 
-                    if (!(flag % 2)) {
-                        ac.style.height = h
-                        ac.style.paddingBlock = '20px'
-                        ac.style.overflow = 'visible'
-                        ac.style.transition = '.5s'
+        val.addEventListener('click', () => {
+            let status = accSub.getAttribute('data-status')
+            if (status == 0) {
 
-                    } else {
-                        ac.style.height = '0px'
-                        ac.style.paddingBlock = '0px'
-                        ac.style.overflow = 'hidden'
-                        ac.style.transition = '.5s'
+                accSub.style.height = h + 'px'
+                accSub.style.overflow = 'visible'
+                accSub.style.transition = '.5s'
+                accSub.setAttribute('data-status', 1)
 
-                    } flag++
-                }
-            })
+            } else {
+                accSub.style.height = '0px'
+                accSub.style.overflow = 'hidden'
+                accSub.style.transition = '.5s'
+                accSub.setAttribute('data-status', 0)
+
+            }
+
         })
     })
+
     // --------------------------------------------------------------
 
 
