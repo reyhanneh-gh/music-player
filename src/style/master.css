@@ -7,6 +7,7 @@
 
 .Bg1 {
     background-color: rgba(101, 101, 101, 0.199);
+    backdrop-filter: blur(20px);
 }
 
 .fontfamily {
