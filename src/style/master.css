@@ -13,3 +13,17 @@
 .fontfamily {
     font-family: "Rubik Wet Paint", system-ui;
 }
+
+/* -------------------scrollbar-------------------- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background:none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 201, 201, 0.37);
+    border-radius: 8px;
+}

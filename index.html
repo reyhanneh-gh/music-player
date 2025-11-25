@@ -26,14 +26,14 @@
     </nav>
     <!-- ------------------------large screen menu-------------------------- -->
     <nav
-        class="lgScreen hidden md:w-1/5 lg:w-1/6 h-full rounded-[15px] md:flex flex-wrap justify-center Bg1 border border-[#91303029]">
+        class="lgScreen hidden md:w-1/5 lg:w-1/6 h-[95vh] rounded-[10px] md:flex flex-wrap justify-center Bg1 border border-[#91303029] fixed left-5 top-[50%] translate-y-[-50%]">
         <logo class="w-full h-fit text-center text-red-300 fontfamily mt-10 md:text-2xl lg:text-4xl cursor-pointer">
             RollDot.</logo>
         <ul
             class="w-full h-fit flex-col justify-center items-center p-2.5 *:w-full *:h-fit *:py-2.5 *:text-red-200 *:cursor-pointer *:hover:bg-[#6021213c] *:duration-300 *:p-2.5">
             <li class="border-b border-b-[#944f4f44] flex items-center gap-x-3"><i class="bi bi-house"></i>Home</li>
             <li class="accMenu border-b border-b-[#944f4f44] flex flex-wrap items-center gap-x-3 relative">
-                <i class="bi bi-ui-radios-grid"></i>Categories
+                <i class="bi bi-ui-radios-grid cursor-pointer"></i>Categories
                 <i class="down bi bi-chevron-down text-red-200 absolute right-2.5 top-[50%] translate-y-[-50%]"></i>
                 <ul
                     class="w-full h-fit *:hover:pl-1.5 *:duration-300 flex flex-wrap justify-center items-center mt-1.5">
@@ -49,7 +49,8 @@
                 </ul>
             </li>
 
-            <li class="border-b border-b-[#944f4f44] flex items-center gap-x-3"><i class="bi bi-person-check"></i>Artists
+            <li class="border-b border-b-[#944f4f44] flex items-center gap-x-3"><i
+                    class="bi bi-person-check"></i>Artists
             </li>
             <li class="accMenu flex flex-wrap items-center gap-x-3 relative"><i
                     class="bi bi-music-note-list"></i>Playlists
@@ -65,17 +66,99 @@
         </ul>
     </nav>
     <!-- ------------------------main-------------------------- -->
-    <div class=" w-full md:w-5/6 h-full rounded-[15px] flex flex-wrap justify-center">
+    <div
+        class=" w-full md:w-4/5 lg:w-5/6 h-[95vh] rounded-[15px] flex flex-wrap justify-center fixed right-0 top-[50%] translate-y-[-50%] overflow-y-scroll">
         <section class="w-full h-fit px-5 flex justify-between md:justify-end items-center">
             <logo class="w-fit h-fit md:hidden text-center text-red-300 fontfamily text-2xl cursor-pointer">RollDot.
             </logo>
             <div class=" w-1/2 md:w-1/4 h-fit flex flex-wrap justify-center items-center relative">
-                <input
-                    class="w-full h-full Bg1 border border-[#91303029] px-2.5 py-1 rounded-full text-gray-400"
+                <input class="w-full h-full Bg1 border border-[#91303029] px-2.5 py-1 rounded-full text-gray-400"
                     type="text">
                 <span id="searchBtn"
                     class="bi bi-search absolute right-[10px] top-[50%] translate-y-[-50%] text-red-200 cursor-pointer z-50"></span>
             </div>
+        </section>
+
+        <!-- ------------------------large screen slider-------------------------- -->
+        <section class="w-full h-fit flex flex-wrap justify-center items-center mt-5 relative">
+            <figure class="size-[25%] border-2 border-[#913030b8] rounded-[10px]  *:overflow-hidden relative">
+                <img src="src/assets/img/covers/crawl.jpg" class="object-center object-cover z-50 rounded-[10px]"
+                    alt="">
+                <div class="absolute bottom-0 left-0 p-2 text-pink-100 w-full">
+                    <h2 class="text-xl font-bold">Crawl</h2>
+                    <p>Bad Omens</p>
+                    <i
+                        class="bi bi-play-circle absolute right-5 top-[50%] translate-y-[-50%] text-3xl cursor-pointer hover:scale-[1.1]"></i>
+                </div>
+            </figure>
+            <figure
+                class="size-[25%] border-2 border-[#913030b8] rounded-[10px] absolute scale-[.9] top-0 right-[55%] -z-40 opacity-70">
+                <img src="src/assets/img/covers/creep.png" class="object-center object-cover rounded-[10px]" alt="">
+            </figure>
+            <figure
+                class="size-[25%] border-2 border-[#913030b8] rounded-[10px] absolute scale-[.8] top-0 right-[70%] -z-50 opacity-20">
+                <img src="src/assets/img/covers/hysteria.jpg" class="object-center object-cover rounded-[10px]" alt="">
+            </figure>
+            <figure
+                class="size-[25%] border-2 border-[#913030b8] rounded-[10px] absolute scale-[.9] top-0 left-[55%] -z-40 opacity-70">
+                <img src="src/assets/img/covers/2face-emptiness-heavy.jpg"
+                    class="object-center object-cover rounded-[10px]" alt="">
+            </figure>
+            <figure
+                class="size-[25%] border-2 border-[#913030b8] rounded-[10px] absolute scale-[.8] top-0 left-[70%] -z-50 opacity-20">
+                <img src="src/assets/img/covers/softcore.webp" class="object-center object-cover rounded-[10px]" alt="">
+            </figure>
+        </section>
+        <!-- -------------------------------------------------------------- -->
+        <section class="w-full h-fit px-20 py-5">
+            <div class="w-full h-fit flex flex-wrap gap-x-5 gap-y-5 items-center">
+                <h2 class="w-full text-xl text-red-200 font-bold">Select Categories</h2>
+                <a href=""
+                    class="flex justify-center items-center py-1 px-5 border border-red-200 text-black bg-red-200 rounded-full">All</a>
+                <a href=""
+                    class="flex justify-center items-center py-1 px-5 border border-red-200 text-red-200 rounded-full hover:text-black hover:bg-red-200 duration-300">Metalcore</a>
+                <a href=""
+                    class="flex justify-center items-center py-1 px-5 border border-red-200 text-red-200 rounded-full hover:text-black hover:bg-red-200 duration-300">Alternative
+                    Rock</a>
+                <a href=""
+                    class="flex justify-center items-center py-1 px-5 border border-red-200 text-red-200 rounded-full hover:text-black hover:bg-red-200 duration-300">Alternative</a>
+                <a href=""
+                    class="flex justify-center items-center py-1 px-5 border border-red-200 text-red-200 rounded-full hover:text-black hover:bg-red-200 duration-300">Persian</a>
+            </div>
+
+            <div
+                class="w-[60%] rounded-[10px] p-5 pb-16 Bg1 border border-[#91303029] h-fit flex flex-wrap gap-x-5 gap-y-5 justify-between items-center mt-10">
+                <h2 class="w-full text-xl text-red-200 font-bold">Top Bands</h2>
+                <figure
+                    class="size-[15%] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1]">
+                    <img src="src/assets/img/covers/Bad_Omens_band.jpg" class="rounded-[10px] object-cover" alt="">
+                    <h3 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">Bad
+                        Omens</h3>
+                </figure>
+                <figure
+                    class="size-[15%] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1]">
+                    <img src="src/assets/img/covers/linkin-park-band-logo-design.png" class="rounded-[10px]" alt="">
+                    <h3 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">Linkin
+                        Park</h3>
+                </figure>
+                <figure
+                    class="size-[15%] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1]">
+                    <img src="src/assets/img/covers/muse-band.jpg" class="rounded-[10px]" alt="">
+                    <h3 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">Muse
+                    </h3>
+                </figure>
+                <figure
+                    class="size-[15%] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1]">
+                    <img src="src/assets/img/covers/softcore.webp" class="rounded-[10px]" alt="">
+                    <h3 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">The
+                        Neighborhood</h3>
+                </figure>
+                <figure
+                    class="size-[15%] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1]">
+                    <img src="src/assets/img/covers/radiohead-logo.png" class="rounded-[10px]" alt="">
+                    <h3 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">
+                        Radiohead</h3>
+                </figure>
         </section>
     </div>
 </body>
@@ -100,15 +183,15 @@
                 accSub.style.height = h + 'px'
                 accSub.style.transition = '.5s'
                 accSub.setAttribute('data-status', 1)
-                val.children[1].style.transform='rotate(180deg)'
-                val.children[1].style.transition='.5s'
+                val.children[1].style.transform = 'rotate(180deg)'
+                val.children[1].style.transition = '.5s'
 
             } else {
                 accSub.style.height = '0px'
                 accSub.style.transition = '.5s'
                 accSub.setAttribute('data-status', 0)
-                val.children[1].style.transform='rotate(0deg)'
-                val.children[1].style.transition='.5s'
+                val.children[1].style.transform = 'rotate(0deg)'
+                val.children[1].style.transition = '.5s'
 
             }
 
