@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="src/assets/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
-<body class="w-full h-dvh flex justify-center items-center myBg bg-gray-900 p-2.5 md:p-5 gap-5 relative">
+<body class="w-full h-dvh flex justify-center items-center myBg bg-gray-900 p-2.5 md:p-5 gap-5">
     <!-- ------------------------moblile menu-------------------------- -->
     <nav
-        class="w-10/12 h-fit rounded-full flex items-center justify-center bg-gray-900 border-t border-t-red-900 md:hidden absolute bottom-5 left-[50%] translate-x-[-50%]">
+        class="w-10/12 h-fit rounded-full flex items-center justify-center bg-gray-900 border-t border-t-red-900 md:hidden absolute bottom-5 left-[50%] translate-x-[-50%] z-50">
         <ul
             class="w-full h-fit flex justify-evenly items-center p-1.5 *:w-fit *:h-fit *:rounded-full *:text-red-200 *:cursor-pointer *:hover:bg-[#60212168] *:duration-300 *:p-1.5">
             <li><i class="bi bi-house"></i></li>
@@ -26,7 +26,7 @@
     </nav>
     <!-- ------------------------large screen menu-------------------------- -->
     <nav
-        class="lgScreen hidden md:w-1/5 lg:w-1/6 h-[95vh] rounded-[10px] md:flex flex-wrap justify-center Bg1 border border-[#91303029] fixed left-5 top-[50%] translate-y-[-50%]">
+        class="lgScreen hidden md:w-1/5 lg:w-1/6 h-full rounded-[10px] md:flex flex-wrap justify-center Bg1 border border-[#91303029]">
         <logo class="w-full h-fit text-center text-red-300 fontfamily mt-10 md:text-2xl lg:text-4xl cursor-pointer">
             RollDot.</logo>
         <ul
@@ -67,7 +67,7 @@
     </nav>
     <!-- ------------------------main-------------------------- -->
     <div
-        class=" w-full md:w-4/5 lg:w-5/6 h-[95vh] rounded-[15px] flex flex-wrap justify-center fixed right-0 top-[50%] translate-y-[-50%] overflow-y-scroll">
+        class=" w-full md:w-4/5 lg:w-5/6 h-full rounded-[15px] flex flex-wrap justify-center overflow-y-scroll">
         <section class="w-full h-fit px-5 flex justify-between md:justify-end items-center">
             <logo class="w-fit h-fit md:hidden text-center text-red-300 fontfamily text-2xl cursor-pointer">RollDot.
             </logo>
@@ -80,7 +80,7 @@
         </section>
 
         <!-- ------------------------large screen slider-------------------------- -->
-        <section class="w-full h-fit flex flex-wrap justify-center items-center mt-5 relative">
+        <section class="w-full h-fit flex flex-wrap justify-center items-center mt-10 relative">
             <figure class="size-[25%] border-2 border-[#913030b8] rounded-[10px]  *:overflow-hidden relative">
                 <img src="src/assets/img/covers/crawl.jpg" class="object-center object-cover z-50 rounded-[10px]"
                     alt="">
@@ -110,55 +110,71 @@
             </figure>
         </section>
         <!-- -------------------------------------------------------------- -->
-        <section class="w-full h-fit px-20 py-5">
+        <section class="w-full h-fit px-5 md:px-16 lg:px-20 py-5 mt-10 flex flex-wrap justify-between gap-y-5">
             <div class="w-full h-fit flex flex-wrap gap-x-5 gap-y-5 items-center">
                 <h2 class="w-full text-xl text-red-200 font-bold">Select Categories</h2>
                 <a href=""
-                    class="flex justify-center items-center py-1 px-5 border border-red-200 text-black bg-red-200 rounded-full">All</a>
+                    class="text-[14px] flex justify-center items-center py-1 px-5 border border-red-200 text-black bg-red-200 rounded-full">All</a>
                 <a href=""
-                    class="flex justify-center items-center py-1 px-5 border border-red-200 text-red-200 rounded-full hover:text-black hover:bg-red-200 duration-300">Metalcore</a>
+                    class="text-[14px] flex justify-center items-center py-1 px-5 border border-red-200 text-red-200 rounded-full hover:text-black hover:bg-red-200 duration-300">Metalcore</a>
                 <a href=""
-                    class="flex justify-center items-center py-1 px-5 border border-red-200 text-red-200 rounded-full hover:text-black hover:bg-red-200 duration-300">Alternative
+                    class="text-[14px] flex justify-center items-center py-1 px-5 border border-red-200 text-red-200 rounded-full hover:text-black hover:bg-red-200 duration-300">Alternative
                     Rock</a>
                 <a href=""
-                    class="flex justify-center items-center py-1 px-5 border border-red-200 text-red-200 rounded-full hover:text-black hover:bg-red-200 duration-300">Alternative</a>
+                    class="text-[14px] flex justify-center items-center py-1 px-5 border border-red-200 text-red-200 rounded-full hover:text-black hover:bg-red-200 duration-300">Alternative</a>
                 <a href=""
-                    class="flex justify-center items-center py-1 px-5 border border-red-200 text-red-200 rounded-full hover:text-black hover:bg-red-200 duration-300">Persian</a>
+                    class="text-[14px] flex justify-center items-center py-1 px-5 border border-red-200 text-red-200 rounded-full hover:text-black hover:bg-red-200 duration-300">Persian</a>
+            </div>
+
+            <div class="w-full lg:w-[60%] rounded-[10px] p-5 Bg1 border border-[#91303029] h-fit md:gap-y-5">
+                <h2 class="w-full text-xl text-red-200 font-bold">Top Bands</h2>
+
+                <div class="h-fit pt-5 pb-16 flex gap-x-5 overflow-x-auto flex-nowrap overflow-y-hidden">
+                    <figure
+                        class="w-[100px] h-[100px] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1] flex-shrink-0">
+                        <img src="src/assets/img/covers/Bad_Omens_band.jpg"
+                            class="w-full h-full rounded-[10px] object-cover" alt="">
+                        <h3 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">
+                            Bad Omens</h3>
+                    </figure>
+
+                    <figure
+                        class="w-[100px] h-[100px] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1] flex-shrink-0">
+                        <img src="src/assets/img/covers/linkin-park-band-logo-design.png"
+                            class="w-full h-full rounded-[10px]" alt="">
+                        <h3 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">
+                            Linkin Park</h3>
+                    </figure>
+
+                    <figure
+                        class="w-[100px] h-[100px] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1] flex-shrink-0">
+                        <img src="src/assets/img/covers/muse-band.jpg" class="w-full h-full rounded-[10px]" alt="">
+                        <h3 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">
+                            Muse</h3>
+                    </figure>
+
+                    <figure
+                        class="w-[100px] h-[100px] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1] flex-shrink-0">
+                        <img src="src/assets/img/covers/softcore.webp" class="w-full h-full rounded-[10px]" alt="">
+                        <h3 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">
+                            The Neighborhood</h3>
+                    </figure>
+
+                    <figure
+                        class="w-[100px] h-[100px] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1] flex-shrink-0">
+                        <img src="src/assets/img/covers/radiohead-logo.png" class="w-full h-full rounded-[10px]" alt="">
+                        <h3 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">
+                            Radiohead</h3>
+                    </figure>
+                </div>
             </div>
 
             <div
-                class="w-[60%] rounded-[10px] p-5 pb-16 Bg1 border border-[#91303029] h-fit flex flex-wrap gap-x-5 gap-y-5 justify-between items-center mt-10">
-                <h2 class="w-full text-xl text-red-200 font-bold">Top Bands</h2>
-                <figure
-                    class="size-[15%] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1]">
-                    <img src="src/assets/img/covers/Bad_Omens_band.jpg" class="rounded-[10px] object-cover" alt="">
-                    <h3 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">Bad
-                        Omens</h3>
-                </figure>
-                <figure
-                    class="size-[15%] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1]">
-                    <img src="src/assets/img/covers/linkin-park-band-logo-design.png" class="rounded-[10px]" alt="">
-                    <h3 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">Linkin
-                        Park</h3>
-                </figure>
-                <figure
-                    class="size-[15%] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1]">
-                    <img src="src/assets/img/covers/muse-band.jpg" class="rounded-[10px]" alt="">
-                    <h3 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">Muse
-                    </h3>
-                </figure>
-                <figure
-                    class="size-[15%] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1]">
-                    <img src="src/assets/img/covers/softcore.webp" class="rounded-[10px]" alt="">
-                    <h3 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">The
-                        Neighborhood</h3>
-                </figure>
-                <figure
-                    class="size-[15%] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1]">
-                    <img src="src/assets/img/covers/radiohead-logo.png" class="rounded-[10px]" alt="">
-                    <h3 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">
-                        Radiohead</h3>
-                </figure>
+                class="w-full lg:w-[38%] rounded-[10px] p-5 pb-16 Bg1 border border-[#91303029] h-full flex flex-wrap gap-x-5 gap-y-10 items-center lg:justify-between md:gap-y-5">
+            </div>
+            <div
+                class="w-full lg:w-[60%] rounded-[10px] p-5 pb-16 Bg1 border border-[#91303029] h-fit flex flex-wrap gap-x-5 gap-y-10 items-center lg:justify-between md:gap-y-5">
+            </div>
         </section>
     </div>
 </body>
