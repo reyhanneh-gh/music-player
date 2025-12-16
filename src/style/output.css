@@ -282,6 +282,14 @@
     width: 25%;
     height: 25%;
   }
+  .size-\[40px\] {
+    width: 40px;
+    height: 40px;
+  }
+  .size-\[60px\] {
+    width: 60px;
+    height: 60px;
+  }
   .size-full {
     width: 100%;
     height: 100%;
@@ -384,6 +392,9 @@
   .resize {
     resize: both;
   }
+  .scroll-ml-80 {
+    scroll-margin-left: calc(var(--spacing) * 80);
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -443,6 +454,9 @@
   }
   .overflow-y-scroll {
     overflow-y: scroll;
+  }
+  .rounded-\[8px\] {
+    border-radius: 8px;
   }
   .rounded-\[10px\] {
     border-radius: 10px;
@@ -654,9 +668,23 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
+  }
+  .\*\:relative {
+    :is(& > *) {
+      position: relative;
+    }
+  }
+  .\*\:flex {
+    :is(& > *) {
+      display: flex;
+    }
   }
   .\*\:h-fit {
     :is(& > *) {
@@ -676,6 +704,21 @@
   .\*\:cursor-pointer {
     :is(& > *) {
       cursor: pointer;
+    }
+  }
+  .\*\:items-center {
+    :is(& > *) {
+      align-items: center;
+    }
+  }
+  .\*\:gap-x-2\.5 {
+    :is(& > *) {
+      column-gap: calc(var(--spacing) * 2.5);
+    }
+  }
+  .\*\:gap-x-5 {
+    :is(& > *) {
+      column-gap: calc(var(--spacing) * 5);
     }
   }
   .\*\:overflow-hidden {
@@ -709,9 +752,19 @@
       padding: calc(var(--spacing) * 2.5);
     }
   }
+  .\*\:px-2\.5 {
+    :is(& > *) {
+      padding-inline: calc(var(--spacing) * 2.5);
+    }
+  }
   .\*\:py-2\.5 {
     :is(& > *) {
       padding-block: calc(var(--spacing) * 2.5);
+    }
+  }
+  .\*\:py-5 {
+    :is(& > *) {
+      padding-block: calc(var(--spacing) * 5);
     }
   }
   .\*\:text-red-200 {
