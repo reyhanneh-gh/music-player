@@ -109,7 +109,7 @@
             </figure>
         </section>
         <!-- -------------------------------------------------------------- -->
-        <section class="w-full h-fit px-5 md:px-16 lg:px-20 py-5 mt-10 flex flex-wrap items-start justify-center gap-5">
+        <section class="w-full h-fit px-5 md:px-16 lg:px-20  mt-10 flex flex-wrap items-start justify-center gap-5">
             <div class="w-full h-fit flex flex-wrap gap-x-5 gap-y-5 items-center">
                 <h2 class="w-full text-xl text-red-200 font-bold">Select Categories</h2>
                 <a href=""
@@ -173,18 +173,22 @@
                         </figure>
                     </div>
                 </div>
+
+                <!-- most played section -->
                 <div
-                    class="w-full rounded-[10px] p-5 pb-16 Bg1 border border-[#91303029] h-[60%] flex flex-wrap gap-x-5 gap-y-10 items-center lg:justify-between md:gap-y-5">
+                    class="w-full rounded-[10px] p-5 pb-16 Bg1 border border-[#91303029] h-[60%] flex flex-wrap gap-x-5 gap-y-10 items-center lg:justify-between md:gap-y-5 overflow-hidden">
                     <h2 class="w-full text-xl text-red-200 font-bold">Most Played</h2>
                     <ul id="mostPlayed"
                         class="w-full h-full overflow-y-scroll p-1 *:p-2 *:border-b *:border-b-[#944f4f44] *:text-red-200 *:flex *:gap-x-5 *:items-center *:cursor-pointer *:relative *:hover:bg-[#6021213c] *:duration-300">
                     </ul>
                 </div>
             </div>
-            <div
+
+            <!-- player section -->
+            <div id="player"
                 class="w-full md:w-[38%] rounded-[10px] p-5 pb-16 Bg1 border border-[#91303029] h-[100vh] flex flex-wrap gap-x-5 gap-y-10 items-center lg:justify-between md:gap-y-5">
                 <figure class="w-full h-fit overflow-hidden rounded-[10px] shadow-2xl shadow-[#9130306e]">
-                    <img src="src/assets/img/covers/crawl.jpg" class="object-cover" alt="">
+                    <img src="src/assets/img/covers/crawl.jpg" class="object-cover w-full h-full" alt="">
                 </figure>
                 <figcaption class="w-full p-2.5 flex flex-col justify-center">
                     <h3 class="text-center text-red-200 font-extrabold text-[20px]">Crawl</h3>
@@ -222,9 +226,10 @@
             </div>
         </section>
     </div>
+   
 </body>
-<script>
-    // -------------------------accordion menu---------------------------
+ <script>
+     // -------------------------accordion menu---------------------------
     let li = document.querySelectorAll('.lgScreen>ul>li')
     let acc = document.querySelectorAll(".accMenu")
     let downIcon = document.querySelectorAll('.down')
@@ -266,29 +271,38 @@
         .then(data => {
             data.forEach(val => {
                 console.log(val);
-                for (let i = 1; i <= 20; i++) {
-                    const mostPlayedLi = document.createElement('li')
-                    if (i == val.id) {
-                        mostPlayedLi.innerHTML = `
+
+
+                const mostPlayedLi = document.createElement('li')
+                mostPlayedLi.innerHTML = `
                 <figure class="size-[40px] rounded-[5px] overflow-hidden shadow shadow-[#211212]">
                 <img src="${val.image}" alt="" class="object-cover">
                 </figure>
-                <h5 class="text-center">${val.title}</h5>
+                <h5>${val.title}</h5>
                 <span class="absolute right-2 top-[50%] translate-y-[-50%]">${val.duration}</span>
                 `
-                        mostPlayedUl.appendChild(mostPlayedLi)
-                    }
+                mostPlayedUl.appendChild(mostPlayedLi)
 
-                }
+                // ----------------------player section--------------------------
+                let cover = document.querySelector("#player>figure>img")
+                let songName = document.querySelector("#player>figcaption>h3")
+                let bandName = document.querySelector("#player>figcaption>h6")
+                let songDuration = document.querySelectorAll("#player>section>span")
 
-
+                mostPlayedLi.addEventListener("click", () => {
+                    cover.src = val.image
+                    songName.innerText = val.title
+                    bandName.innerText = val.artist
+                    songDuration.forEach((val1, i) => {
+                        if (i == 0) {
+                            val1.innerText = val.duration
+                        }
+                    })
+                })
             })
 
         })
 
-
-
-
-</script>
+ </script>
 
 </html>
