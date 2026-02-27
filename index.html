@@ -75,7 +75,8 @@
             </logo>
 
             <div class=" w-1/2 md:w-1/3 lg:w-1/4 h-fit flex flex-wrap justify-center items-center relative">
-                <input class="w-full h-full Bg1 border border-[#91303029] px-2.5 py-1 rounded-full text-gray-400"
+                <input id="search"
+                    class="w-full h-full Bg1 border border-[#91303029] px-2.5 py-1 rounded-full text-gray-400"
                     type="text">
                 <span id="searchBtn"
                     class="bi bi-search absolute right-[10px] top-[50%] translate-y-[-50%] text-red-200 cursor-pointer z-50"></span>
@@ -320,6 +321,13 @@
                     playSong(index)
                 })
             })
+            // ----------------------search--------------------------
+            let searchInp = document.getElementById("search")
+            let mySearch = searchInp.value.trim().toLowerCase()
+            searchInp.addEventListener("input", () => {
+
+            })
+
 
         })
         .catch(err => {
@@ -338,6 +346,7 @@
                 val1.innerText = mySong[index1].duration
             }
         })
+
         audio.play()
         playBtn.classList.remove("bi-play-fill")
         playBtn.classList.add("bi-pause-fill")
@@ -362,6 +371,19 @@
         playing()
     })
 
+    prevBtn.addEventListener("click", () => {
+        if (currentIndex > 0) {
+            currentIndex--
+            playSong(currentIndex)
+        }
+    })
+
+    nextBtn.addEventListener("click", () => {
+        if (currentIndex < mySong.length - 1) {
+            currentIndex++
+            playSong(currentIndex)
+        }
+    })
 </script>
 
 </html>
