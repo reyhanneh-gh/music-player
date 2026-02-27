@@ -1,13 +1,13 @@
 [
   {
     "id": 1,
-    "title": "Your Woman",
-    "artist": "White Town",
-    "duration": "4:20",
-    "release_year": 1997,
-    "album": "Women in Technology",
-    "image": "src/assets/img/covers/your-woman.jpg",
-    "track_link": "src/assets/Music/04 White Town - Your Woman.mp3"
+    "title": "Crawl",
+    "artist": "Bad Omens",
+    "duration": "4:07",
+    "release_year": 2016,
+    "album": "Bad Omens",
+    "image": "src/assets/img/covers/crawl.jpg",
+    "track_link": "src/assets/Music/Bad Omens - Crawl.mp3"
   },
   {
     "id": 2,
@@ -101,7 +101,7 @@
   },
   {
     "id": 11,
-    "title": "ANYTHING > HUMAN (feat. ERRA)",
+    "title": "ANYTHING > HUMAN",
     "artist": "Bad Omens (feat. ERRA)",
     "duration": "3:55",
     "release_year": 2024,
@@ -131,13 +131,13 @@
   },
   {
     "id": 14,
-    "title": "Crawl",
-    "artist": "Bad Omens",
-    "duration": "4:07",
-    "release_year": 2016,
-    "album": "Bad Omens",
-    "image": "src/assets/img/covers/crawl.jpg",
-    "track_link": "src/assets/Music/Bad Omens - Crawl.mp3"
+    "title": "Your Woman",
+    "artist": "White Town",
+    "duration": "4:20",
+    "release_year": 1997,
+    "album": "Women in Technology",
+    "image": "src/assets/img/covers/your-woman.jpg",
+    "track_link": "src/assets/Music/04 White Town - Your Woman.mp3"
   },
   {
     "id": 15,

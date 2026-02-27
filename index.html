@@ -14,7 +14,7 @@
 <body class="w-full h-dvh flex justify-center items-center myBg bg-gray-900 p-2.5 md:p-5 gap-5">
     <!-- ------------------------moblile menu-------------------------- -->
     <nav
-        class="w-10/12 h-fit rounded-full flex items-center justify-center bg-gray-900 border-t border-t-red-900 md:hidden absolute bottom-5 left-[50%] translate-x-[-50%] z-50">
+        class="w-11/12 h-fit rounded-full flex items-center justify-center bg-gray-900 border-t border-t-red-900 md:hidden absolute bottom-5 left-[50%] translate-x-[-50%] z-50">
         <ul
             class="w-full h-fit flex justify-evenly items-center p-1.5 *:w-fit *:h-fit *:rounded-full *:text-red-200 *:cursor-pointer *:hover:bg-[#60212168] *:duration-300 *:p-1.5">
             <li><i class="bi bi-house"></i></li>
@@ -26,7 +26,7 @@
     </nav>
     <!-- ------------------------large screen menu-------------------------- -->
     <nav
-        class="lgScreen hidden md:w-1/5 lg:w-1/6 h-full rounded-[10px] md:flex flex-wrap justify-center Bg1 border border-[#91303029]">
+        class="lgScreen hidden md:w-1/4 lg:w-1/6 h-full rounded-[10px] md:flex flex-wrap justify-center Bg1 border border-[#91303029]">
         <logo class="w-full h-fit text-center text-red-300 fontfamily mt-10 md:text-2xl lg:text-4xl cursor-pointer">
             RollDot.</logo>
         <ul
@@ -35,6 +35,7 @@
             <li class="accMenu border-b border-b-[#944f4f44] flex flex-wrap items-center gap-x-3 relative">
                 <i class="bi bi-ui-radios-grid cursor-pointer"></i>Categories
                 <i class="down bi bi-chevron-down text-red-200 absolute right-2.5 top-[50%] translate-y-[-50%]"></i>
+
                 <ul
                     class="w-full h-fit *:hover:pl-1.5 *:duration-300 flex flex-wrap justify-center items-center mt-1.5">
                     <li class="w-full h-fit flex items-center gap-3 py-1 text-[#ffc9c970]">
@@ -52,6 +53,7 @@
             <li class="border-b border-b-[#944f4f44] flex items-center gap-x-3"><i
                     class="bi bi-person-check"></i>Artists
             </li>
+
             <li class="accMenu flex flex-wrap items-center gap-x-3 relative"><i
                     class="bi bi-music-note-list"></i>Playlists
                 <i class="down bi bi-chevron-down text-red-200 absolute right-2.5 top-[50%] translate-y-[-50%]"></i>
@@ -61,6 +63,7 @@
                             class="bi bi-folder2"></i>استاد پسند</li>
                     <li class="w-full h-fit flex items-center gap-x-3 py-1 text-[#ffc9c970]"> <i
                             class="bi bi-folder2"></i>Others</li>
+
                 </ul>
             </li>
         </ul>
@@ -70,12 +73,17 @@
         <section class="w-full h-fit px-5 flex justify-between md:justify-end items-center">
             <logo class="w-fit h-fit md:hidden text-center text-red-300 fontfamily text-2xl cursor-pointer">RollDot.
             </logo>
-            <div class=" w-1/2 md:w-1/4 h-fit flex flex-wrap justify-center items-center relative">
+
+            <div class=" w-1/2 md:w-1/3 lg:w-1/4 h-fit flex flex-wrap justify-center items-center relative">
                 <input class="w-full h-full Bg1 border border-[#91303029] px-2.5 py-1 rounded-full text-gray-400"
                     type="text">
                 <span id="searchBtn"
                     class="bi bi-search absolute right-[10px] top-[50%] translate-y-[-50%] text-red-200 cursor-pointer z-50"></span>
+                <div id="searchSection"
+                    class="hidden w-full h-[300px] absolute top-[110%] left-0 overflow-y-scroll p-1 *:p-2 *:border-b *:border-b-[#944f4f44] *:text-red-200 *:flex *:gap-x-5 *:items-center *:cursor-pointer bg-[rgb(95,38,38)] rounded-[5px] *:hover:bg-[#6021213c] *:duration-300 z-50">
+                </div>
             </div>
+
         </section>
 
         <!-- ------------------------large screen slider-------------------------- -->
@@ -110,7 +118,7 @@
         </section>
         <!-- -------------------------------------------------------------- -->
         <section class="w-full h-fit px-5 md:px-16 lg:px-20  mt-10 flex flex-wrap items-start justify-center gap-5">
-            <div class="w-full h-fit flex flex-wrap gap-x-5 gap-y-5 items-center">
+            <div class="w-full h-fit flex flex-wrap gap-2.5 items-center">
                 <h2 class="w-full text-xl text-red-200 font-bold">Select Categories</h2>
                 <a href=""
                     class="text-[14px] flex justify-center items-center py-1 px-5 border border-red-200 text-black bg-red-200 rounded-full">All</a>
@@ -124,6 +132,7 @@
                 <a href=""
                     class="text-[14px] flex justify-center items-center py-1 px-5 border border-red-200 text-red-200 rounded-full hover:text-black hover:bg-red-200 duration-300">Persian</a>
             </div>
+
             <div class="w-full md:w-[60%] h-[100vh] flex flex-wrap gap-y-5 pb-5">
                 <div class="w-full rounded-[10px] p-5 Bg1 border border-[#91303029] h-[40%]">
                     <h2 class="w-full text-xl text-red-200 font-bold">Top Bands</h2>
@@ -137,7 +146,6 @@
                                 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">
                                 Bad Omens</h3>
                         </figure>
-
                         <figure
                             class="w-[100px] h-[100px] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1] flex-shrink-0 duration-200">
                             <img src="src/assets/img/covers/linkin-park-band-logo-design.png"
@@ -146,7 +154,6 @@
                                 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">
                                 Linkin Park</h3>
                         </figure>
-
                         <figure
                             class="w-[100px] h-[100px] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1] flex-shrink-0 duration-200">
                             <img src="src/assets/img/covers/muse-band.jpg" class="w-full h-full rounded-[10px]" alt="">
@@ -154,7 +161,6 @@
                                 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">
                                 Muse</h3>
                         </figure>
-
                         <figure
                             class="w-[100px] h-[100px] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1] flex-shrink-0 duration-200">
                             <img src="src/assets/img/covers/softcore.webp" class="w-full h-full rounded-[10px]" alt="">
@@ -162,7 +168,6 @@
                                 class="w-full h-fit text-center text-red-200 absolute top-[100%] left-0 text-[14px] pt-2">
                                 The Neighborhood</h3>
                         </figure>
-
                         <figure
                             class="w-[100px] h-[100px] border-2 border-[#91303029] rounded-[10px] relative cursor-pointer hover:scale-[1.1] flex-shrink-0 duration-200">
                             <img src="src/assets/img/covers/radiohead-logo.png" class="w-full h-full rounded-[10px]"
@@ -174,7 +179,7 @@
                     </div>
                 </div>
 
-                <!-- most played section -->
+                <!---------------- most played section ---------------->
                 <div
                     class="w-full rounded-[10px] p-5 pb-16 Bg1 border border-[#91303029] h-[60%] flex flex-wrap gap-x-5 gap-y-10 items-center lg:justify-between md:gap-y-5 overflow-hidden">
                     <h2 class="w-full text-xl text-red-200 font-bold">Most Played</h2>
@@ -184,52 +189,57 @@
                 </div>
             </div>
 
-            <!-- player section -->
+            <!-- ------------------ Player Section ------------------ -->
             <div id="player"
-                class="w-full md:w-[38%] rounded-[10px] p-5 pb-16 Bg1 border border-[#91303029] h-[100vh] flex flex-wrap gap-x-5 gap-y-10 items-center lg:justify-between md:gap-y-5">
+                class="w-full md:w-[35%] rounded-[10px] p-5 pb-16 Bg1 border border-[#91303029] h-fit md:h-dvh flex flex-wrap gap-x-5 gap-y-10 items-center lg:justify-between md:gap-y-5">
                 <figure class="w-full h-fit overflow-hidden rounded-[10px] shadow-2xl shadow-[#9130306e]">
-                    <img src="src/assets/img/covers/crawl.jpg" class="object-cover w-full h-full" alt="">
+                    <img src="src/assets/img/covers/crawl.jpg" alt="" id="cover" class="w-full h-full object-cover">
                 </figure>
                 <figcaption class="w-full p-2.5 flex flex-col justify-center">
-                    <h3 class="text-center text-red-200 font-extrabold text-[20px]">Crawl</h3>
-                    <h6 class="text-center text-red-200">Bad Omens</h6>
+                    <h3 id="title" class="text-center text-red-200 font-extrabold text-[20px]">Song Name</h3>
+                    <h6 id="artist" class="text-center text-red-200">Artist Name</h6>
                 </figcaption>
-                <section class="w-full pe-2.5 flex gap-1.5 justify-center items-center">
-                    <span class="text-red-200 text-xs">0:00</span>
-                    <div class="w-full h-[5px] rounded-full bg-gray-500 relative cursor-pointer">
+
+                <section class="w-full p-2.5 flex gap-2.5 justify-between items-center">
+                    <span id="current" class="text-red-200 text-xs">0:00</span>
+                    <div class="w-[70%] h-[5px] rounded-full bg-gray-500 relative cursor-pointer">
                         <div id="progress"
-                            class="absolute w-[50%] h-full rounded-full left-0 top-[50%] translate-y-[-50%] prbarBg">
+                            class="absolute w-[0%] h-full rounded-full left-0 top-[50%] translate-y-[-50%] prbarBg">
                             <span id="dot"
                                 class="absolute right-0 top-[50%] translate-y-[-50%] size-[15px] rounded-full bg-red-200"></span>
                         </div>
                     </div>
-                    <span class="text-red-200 text-xs">0:00</span>
+                    <span id="duration" class="text-red-200 text-xs">0:00</span>
                 </section>
+
                 <section class="w-full h-fit p-2.5 flex justify-evenly items-center">
-                    <i class="bi bi-skip-start-fill text-red-200 text-3xl cursor-pointer"></i>
-                    <i class="bi bi-play-fill text-red-200 text-3xl cursor-pointer"></i>
-                    <i class="bi bi-skip-end-fill text-red-200 text-3xl cursor-pointer"></i>
+                    <i id="prev" class="bi bi-skip-start-fill text-red-200 text-3xl cursor-pointer"></i>
+                    <i id="play" class="bi bi-play-fill text-red-200 text-3xl cursor-pointer"></i>
+                    <i id="next" class="bi bi-skip-end-fill text-red-200 text-3xl cursor-pointer"></i>
                 </section>
+
                 <section class="w-full h-fit flex justify-between items-center p-x-2.5">
                     <div class="w-fit h-fit flex justify-between items-center">
-                        <i class="bi bi-volume-down  text-red-200 text-2xl cursor-pointer"></i>
+                        <i id="volBtn" class="bi bi-volume-down text-red-200 text-2xl cursor-pointer"></i>
                         <div class="w-[70px] h-[3px] rounded-full bg-gray-500 relative cursor-pointer">
-                            <div id="volume"
+                            <div id="vol"
                                 class="absolute w-[50%] h-full rounded-full left-0 top-[50%] translate-y-[-50%] bg-red-200">
                                 <span
                                     class="absolute right-0 top-[50%] translate-y-[-50%] size-[9px] rounded-full bg-red-200"></span>
                             </div>
                         </div>
                     </div>
-                    <i class="bi bi-repeat  text-red-200 cursor-pointer"></i>
+                    <i id="repeatBtn" class="bi bi-repeat text-red-200 cursor-pointer"></i>
                 </section>
+
+                <audio id="audio"></audio>
+
             </div>
-        </section>
     </div>
-   
+
 </body>
- <script>
-     // -------------------------accordion menu---------------------------
+<script>
+    // -------------------------accordion menu---------------------------
     let li = document.querySelectorAll('.lgScreen>ul>li')
     let acc = document.querySelectorAll(".accMenu")
     let downIcon = document.querySelectorAll('.down')
@@ -264,14 +274,35 @@
         })
     })
 
-    // ------------------most played section fetch api----------------------
-    const mostPlayedUl = document.querySelector("#mostPlayed")
+    // // ------------------most played section fetch api----------------------
+    let mostPlayedUl = document.getElementById("mostPlayed")
+    let audio = document.getElementById("audio")
+
+    let cover = document.querySelector("#player>figure>img")
+    let songName = document.querySelector("#player>figcaption>h3")
+    let bandName = document.querySelector("#player>figcaption>h6")
+    let songDuration = document.querySelectorAll("#player>section>span")
+    let progressBar = document.getElementById("progress")
+
+    // btns
+    const playBtn = document.getElementById("play")
+    const prevBtn = document.getElementById("prev")
+    const nextBtn = document.getElementById("next")
+    const volBtn = document.getElementById("volBtn")
+    const volumeBar = document.getElementById("vol")
+    const repeatBtn = document.getElementById("repeatBtn")
+
+    let mySong = []
+    let currentIndex = 0
+    let isPlaying = false
+    let isRepeat = false
+
     fetch("src/assets/tracks.json")
         .then(response => response.json())
         .then(data => {
-            data.forEach(val => {
-                console.log(val);
-
+            data.forEach((val, index) => {
+                console.log(val)
+                mySong = data
 
                 const mostPlayedLi = document.createElement('li')
                 mostPlayedLi.innerHTML = `
@@ -284,25 +315,53 @@
                 mostPlayedUl.appendChild(mostPlayedLi)
 
                 // ----------------------player section--------------------------
-                let cover = document.querySelector("#player>figure>img")
-                let songName = document.querySelector("#player>figcaption>h3")
-                let bandName = document.querySelector("#player>figcaption>h6")
-                let songDuration = document.querySelectorAll("#player>section>span")
 
                 mostPlayedLi.addEventListener("click", () => {
-                    cover.src = val.image
-                    songName.innerText = val.title
-                    bandName.innerText = val.artist
-                    songDuration.forEach((val1, i) => {
-                        if (i == 0) {
-                            val1.innerText = val.duration
-                        }
-                    })
+                    playSong(index)
                 })
             })
 
         })
+        .catch(err => {
+            console.log("data not found.")
 
- </script>
+        })
+
+    function playSong(index1) {
+        cover.src = mySong[index1].image
+        songName.innerText = mySong[index1].title
+        bandName.innerText = mySong[index1].artist
+        audio.src = mySong[index1].track_link
+        currentIndex = index1
+        songDuration.forEach((val1, i) => {
+            if (i == 1) {
+                val1.innerText = mySong[index1].duration
+            }
+        })
+        audio.play()
+        playBtn.classList.remove("bi-play-fill")
+        playBtn.classList.add("bi-pause-fill")
+        isPlaying = true
+    }
+
+    function playing() {
+        if (!isPlaying) {
+            audio.play()
+            playBtn.classList.remove("bi-play-fill")
+            playBtn.classList.add("bi-pause-fill")
+            isPlaying = true
+        } else {
+            audio.pause()
+            playBtn.classList.remove("bi-pause-fill")
+            playBtn.classList.add("bi-play-fill")
+            isPlaying = false
+        }
+    }
+
+    playBtn.addEventListener("click", () => {
+        playing()
+    })
+
+</script>
 
 </html>
