@@ -425,6 +425,11 @@
             })
         }
     })
+    progressBar.parentElement.addEventListener("click", (e) => {
+        const width = e.target.clientWidth
+        const clickX = e.offsetX
+        audio.currentTime = (clickX / width) * audio.duration
+    })
 </script>
 
 </html>
