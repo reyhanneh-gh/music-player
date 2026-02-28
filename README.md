@@ -2,7 +2,7 @@
 A simple and responsive music player built with vanilla JavaScript.  
 This project focuses on audio control logic, DOM updates, and interactive UI behavior while keeping the interface clean and intuitive.
 
-[Live Demo](https://reyhanneh-gh.github.io/Espinas-Hotel/) 🪄
+[Live Demo](https://reyhanneh-gh.github.io/music-player/) 🪄
 
 ---
 
