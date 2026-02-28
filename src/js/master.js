@@ -192,12 +192,12 @@ progressBar.parentElement.addEventListener("click", (e) => {
 // ------------------ Repeat ----------------------
 repeatBtn.addEventListener("click", () => {
     if (!isRepeat) {
-        repeatBtn.classList.remove("text-red-200")
+        repeatBtn.classList.remove("text-white")
         repeatBtn.classList.add("text-red-500")
         isRepeat = true
     } else {
         repeatBtn.classList.remove("text-red-500")
-        repeatBtn.classList.add("text-red-200")
+        repeatBtn.classList.add("text-white")
         isRepeat = false
     }
 })
@@ -209,4 +209,25 @@ audio.addEventListener("ended", () => {
     } else if (currentIndex < mySong.length - 1) {
         playSong(currentIndex + 1)
     }
+})
+
+// ------------------ Volume ----------------------
+volBtn.addEventListener("click", () => {
+    if (audio.muted) {
+        volBtn.classList.remove("bi-volume-up")
+        volBtn.classList.add("bi-volume-mute")
+        audio.muted = !audio.muted
+    } else {
+        volBtn.classList.remove("bi-volume-mute")
+        volBtn.classList.add("bi-volume-up")
+        audio.muted = !audio.muted
+    }
+})
+
+volumeBar.addEventListener("click", (e) => {
+    const width = e.currentTarget.clientWidth
+    const clickBar = e.offsetX
+    currentVolume = clickBar / width
+    audio.volume = currentVolume
+    e.currentTarget.firstElementChild.style.width = (currentVolume * 100) + "%"
 })
