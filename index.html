@@ -81,7 +81,7 @@
                 <span id="searchBtn"
                     class="bi bi-search absolute right-[10px] top-[50%] translate-y-[-50%] text-red-200 cursor-pointer z-50"></span>
                 <div id="searchSection"
-                    class="hidden w-full h-[300px] absolute top-[110%] left-0 overflow-y-scroll p-1 *:p-2 *:border-b *:border-b-[#944f4f44] *:text-red-200 *:flex *:gap-x-5 *:items-center *:cursor-pointer bg-[rgb(95,38,38)] rounded-[5px] *:hover:bg-[#6021213c] *:duration-300 z-50">
+                    class="hidden w-full h-fit absolute top-[110%] left-0 overflow-y-scroll p-1 *:p-2 *:border-b *:border-b-[#944f4f44] *:text-white *:text-[12px] *:flex *:gap-x-5 *:items-center *:justify-between *:cursor-pointer bg-[rgb(95,38,38)] rounded-[5px] *:hover:bg-[#6021213c] *:duration-300 z-50">
                 </div>
             </div>
 
@@ -320,14 +320,44 @@
                 mostPlayedLi.addEventListener("click", () => {
                     playSong(index)
                 })
-            })
-            // ----------------------search--------------------------
-            let searchInp = document.getElementById("search")
-            let mySearch = searchInp.value.trim().toLowerCase()
-            searchInp.addEventListener("input", () => {
+                // ----------------------search--------------------------
+                let searchBtn = document.getElementById("searchBtn")
+                let searchInp = document.getElementById("search")
+                let searchSection = document.getElementById("searchSection")
 
-            })
+                searchBtn.addEventListener("click", () => {
+                    let mySearch = searchInp.value.trim().toLowerCase()
+                    searchSection.innerHTML = ""
 
+                    let result = data.filter(song =>
+                        song.title.toLowerCase().includes(mySearch) ||
+                        song.artist.toLowerCase().includes(mySearch)
+                    )
+
+                    if (result.length === 0) {
+                        searchSection.innerText = "No results found."
+                        searchSection.style.display = "block"
+                        return
+                    }
+
+                    result.forEach(resVal => {
+                        let searchLi = document.createElement("li")
+                        searchLi.innerHTML = `
+                        <h3>${resVal.title}</h3>
+                        <h4 class="text-end">${resVal.artist}</h4>
+                         `
+                        searchLi.addEventListener("click", () => {
+                            let i = data.indexOf(resVal)
+                            playSong(i)
+                            searchSection.style.display = "none"
+                        })
+
+                        searchSection.appendChild(searchLi)
+                    })
+
+                    searchSection.style.display = "block"
+                })
+            })
 
         })
         .catch(err => {
