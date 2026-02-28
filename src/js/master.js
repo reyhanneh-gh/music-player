@@ -214,12 +214,12 @@ audio.addEventListener("ended", () => {
 // ------------------ Volume ----------------------
 volBtn.addEventListener("click", () => {
     if (audio.muted) {
-        volBtn.classList.remove("bi-volume-up")
-        volBtn.classList.add("bi-volume-mute")
-        audio.muted = !audio.muted
-    } else {
         volBtn.classList.remove("bi-volume-mute")
         volBtn.classList.add("bi-volume-up")
+        audio.muted = !audio.muted
+    } else {
+        volBtn.classList.remove("bi-volume-up")
+        volBtn.classList.add("bi-volume-mute")
         audio.muted = !audio.muted
     }
 })
